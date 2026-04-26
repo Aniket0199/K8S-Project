@@ -17,3 +17,10 @@ spec:
         image: aniketpatil0199/k8s-project1:latest
         ports:
         - containerPort: 80
+        resources:
+          limits:
+            memory: "300Mi"
+            cpu: "300m"
+          requests:
+            memory: "200Mi"
+            cpu: "200m"
